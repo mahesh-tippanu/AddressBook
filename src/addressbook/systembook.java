@@ -2,39 +2,33 @@ package addressbook;
 import javax.naming.Name;
 import java.util.ArrayList;
 public class systembook {
-    private String name;
-    private String phonenumber;
-    public systembook() {
+    private String firstname,lastNmae,address,city,state,pincode,contactno,email;
+    public systembook(string fname,string lname,
+                      string address,string cityname,string state,string pincode,
+                      string contact_No,string email_id){
     }
-    public systembook(String name, String phone_no) {
-        this.name = name;
-        this.phonenumber = phone_no;
+        this.firstname = fname;
+        this.lastname = lName;
+        this.address = address;
+        this.city = cityName;
+        this.state = state;
+        this.PipCode = PinCode;
+        this.contactNo = contact_No;
+        this.email = email_id;
     }
-    public String getName()
+    public String getfirstName()
     {
-        return name;
+        return firstName;
     }
-    public void setName(String name) {
-        this.name = name;
+    public void setfirstName(String firstname) {
+        this.firstname = firstname;
     }
-    public String getPhonenumber() {
-        return phonenumber;
-    }
-    public void setPhonenumber(String phonenumber) {
-        this.phonenumber = phonenumber;
-    }
-    public class main {
+        public class systembookMain {
         public static void main(String[] arys) {
-            ArrayList<systembook> info = new ArrayList<>();
-            info.add(new systembook(  "mahesh","6303186275"));
-            System.out.println("\nsystembook Info");
-            System.out.println();
-            System.out.printf("%1s%15\n" + "name" + "phonenumber\n");
-            System.out.println();
-            for (systembook ph : info)
-            {
-                System.out.println("%1s%15\n"+ ph.getName() + ph.getPhonenumber());
-            }
+            System.out.println("Welcome to Address book");
+            contacts contacts_no = new contact_no("madhukar","tatiraju","gurdavara","viazg","AP","530040",""6303301745","madhukar@gmail.com"                                         
+            System.out.println(contact_no.getFirstName());
+            System.out.println(contacts.getEmail_id());       
         }
     }
 }
