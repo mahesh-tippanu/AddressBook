@@ -2,10 +2,11 @@ package addressbook;
 import java.util.ArrayList;
 import java.util.Scanner;
 public class addperson_details {
-    ArrayList<Contacts> addpersondetails = new ArrayList<>();
-    Scanner sc = new Scanner(System.in);
-
-    public void addDetails() {
+    static ArrayList<Contacts> addpersondetails = new ArrayList<>();
+    static Scanner sc = new Scanner(System.in);
+    static Contacts contacts = new Contacts();
+    public void addDetails() 
+    {
         Contacts info = new Contacts();
         System.out.println("Enter the First name: ");
         info.setFirstName(sc.next());
